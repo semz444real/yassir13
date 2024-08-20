@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inventory-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1500px;
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.8);
+    gap: 40px;
+}
+
+.inventory-panel {
+    width: 40%;
+    background-color: rgba(45, 45, 45, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inventory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.capacity {
+    color: #00FFFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #00FFFF;
+    border-radius: 5px;
+    width: 50%; /* Example filled value */
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 15px;
+    background-color: rgba(40, 40, 40, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: center; /* Center align the grid */
+    align-content: center; /* Vertically center align */
+    height: 450px; /* Set fixed height to match panel size */
+}
+
+.inventory-item, .inventory-slot {
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    height: 90px; /* Ensure the blocks are uniform in size */
+    width: 90px;
+}
+
+.inventory-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.inventory-item p {
+    color: white;
+    font-size: 1rem;
+}
+
+.inventory-actions {
+    width: 15%; /* Adjusted from 18% to 15% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(45, 45, 45, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+.option-button {
+    background-color: #00FFFF;
+    color: #1e1e1e;
+    padding: 15px 30px; /* Adjusted padding to make the buttons slightly smaller */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.option-button:hover {
+    background-color: #00e5e5;
+    box-shadow: 0px 8px 15px rgba(0, 255, 255, 0.4);
+}
+
+.logo img {
+    margin-bottom: 20px;
+    width: 60px;
+}
